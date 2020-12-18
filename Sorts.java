@@ -3,8 +3,9 @@ public class Sorts{
   *@postcondition The array will be modified such that the elements will be in increasing order.
   *@param data  the elements to be sorted.
   */
-  boolean swapped = true;
+
   public static void bubbleSort(int[] data){
+  boolean swapped = true;
     while (swapped){
       swapped = false;
       for(int i = 0; i < data.length-1; i++){
