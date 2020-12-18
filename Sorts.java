@@ -3,11 +3,18 @@ public class Sorts{
   *@postcondition The array will be modified such that the elements will be in increasing order.
   *@param data  the elements to be sorted.
   */
-  int swaps = 1;
+  boolean swapped = true;
   public static void bubbleSort(int[] data){
-    while (swaps != 0){
+    while (swapped){
+      swapped = false;
       for(int i = 0; i < data.length-1; i++){
-
+        int temp;
+        if (data[i]>data[i+1]) {
+          temp = data[i+1];
+          data[i+1] = data[i];
+          data[i] = temp;
+          swapped = true;
+        }
       }
     }
   }
