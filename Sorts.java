@@ -24,8 +24,13 @@ public class Sorts{
     for(int i = 0; i < size-1; i++){
       int smallest = i;
       for (int j = i+1; j < n; j++){
-        
+        if (data[smallest]>data[j]){
+          smallest = j;
+        }
       }
+      int temp = data[smallest];
+      data[smallest] = data[i];
+      data[i] = temp;
     }
   }
 }
