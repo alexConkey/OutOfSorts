@@ -23,7 +23,7 @@ public class Sorts{
     int size = data.length;
     for(int i = 0; i < size-1; i++){
       int smallest = i;
-      for (int j = i+1; j < n; j++){
+      for (int j = i+1; j < size; j++){
         if (data[smallest]>data[j]){
           smallest = j;
         }
