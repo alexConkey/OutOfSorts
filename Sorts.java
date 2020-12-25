@@ -33,4 +33,10 @@ public class Sorts{
       data[i] = temp;
     }
   }
+  public static void insertionSort(int[] data){
+    int size = data.length;
+    for (int i = 1; < size; i++){
+      
+    }
+  }
 }
