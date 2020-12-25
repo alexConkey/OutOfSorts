@@ -36,7 +36,11 @@ public class Sorts{
   public static void insertionSort(int[] data){
     int size = data.length;
     for (int i = 1; < size; i++){
-      
+      int j = i-1;
+      int current = data[i];
+      while (j >= 0 && data[j] > key){
+        
+      }
     }
   }
 }
